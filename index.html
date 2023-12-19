@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <div class="container">
+        <select name="dices" id="select-dices" onchange="typeDice()">
+            <option value="4">d4</option>
+            <option value="6">d6</option>
+            <option value="8">d8</option>
+            <option value="10">d10</option>
+            <option value="12">d12</option>
+            <option value="20">d20</option>
+            <option value="100">d100</option>
+        </select>
+        <div class="dice" id="dice">
+            <h1 id="number">0</h1>
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+</html>

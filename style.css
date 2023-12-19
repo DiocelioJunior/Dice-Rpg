@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lato', sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+}
+
+.dice{
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #e98080;
+    transition: transform 0.5s ease-in-out;
+}
+
+.dice.rolling {
+    animation: spin 1s ease-in-out infinite;
+}
+
+#number{
+    font-size: 4rem;
+    color: #fff;
+}
+
+#select-dices{
+    margin-bottom: 45px;
+    width: 40%;
+    height: 30px;
+    border: none;
+    border-bottom: 1px solid #e98080;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
